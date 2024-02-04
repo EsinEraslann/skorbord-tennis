@@ -1,0 +1,43 @@
+
+
+body{
+    background-image: url(bg-tenis-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+
+section{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.skorbord{
+    background-color: #134d51 ;
+    border-radius: 20px;
+    width: 50rem;
+    height: 450px;
+    margin: 0 25px;
+}
+
+.skorbord h1{
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    gap: 70px;
+    font-weight: bolder;
+    /* justify-content: center; */
+}
+
+.row div{
+    background-color: black;
+    padding: 10px;
+}
+
+.skorsOne div{
+    line-height: 80px;
+}
