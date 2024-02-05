@@ -1,5 +1,4 @@
 
-
 body{
     background-image: url(bg-tenis-img.png);
     background-size: cover;
@@ -19,7 +18,7 @@ section{
     border-radius: 20px;
     width: 50rem;
     height: 450px;
-    margin: 0 25px;
+    margin: 0 55px;
 }
 
 .skorbord h1{
@@ -28,16 +27,12 @@ section{
 
 .row{
     display: flex;
-    gap: 70px;
+    gap: 100px;
     font-weight: bolder;
-    /* justify-content: center; */
+   /*  justify-content: center; */
 }
 
-.row div{
-    background-color: black;
-    padding: 10px;
-}
-
-.skorsOne div{
-    line-height: 80px;
+.col p{
+    background-color: #000;
+    text-align: center;
 }
