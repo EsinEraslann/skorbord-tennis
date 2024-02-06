@@ -14,11 +14,10 @@ section{
 }
 
 .skorbord{
-    background-color: #134d51 ;
-    border-radius: 20px;
-    width: 50rem;
-    height: 450px;
-    margin: 0 55px;
+    background-color: #3e6541 ;
+    width: 45rem;
+    height: 350px;
+    margin: 0 60px;
 }
 
 .skorbord h1{
@@ -27,12 +26,23 @@ section{
 
 .row{
     display: flex;
-    gap: 100px;
+    gap: 40px;
     font-weight: bolder;
-   /*  justify-content: center; */
+    justify-content: center;
 }
 
 .col p{
-    background-color: #000;
+    background-color: #c2b65e ;
+    color: black;
+    padding: 10px;
     text-align: center;
+}
+
+
+
+
+
+
+.test{
+    font-family: 'Seven Segment', sans-serif;
 }

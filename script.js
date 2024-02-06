@@ -15,57 +15,27 @@ function changeName(order) {
 
 }
 
-/* 
-// Sayıya tıklandığında sayıyı artır
-document
-  .getElementById("button")
-  .addEventListener("click", function () {
-    number++;
-    // Sayıyı göster
-    document.getElementById("number").innerHTML = number;
-  });
- */
-function arttir() {
-
-    let sonuc = document.getElementById("sonuc");
-    sonuc.value = Number(sonuc.value) + 1;
-}
-
-function azalt() {
-
-    let sonuc = document.getElementById("sonuc");
-    sonuc.value = Number(sonuc.value) - 1;
-}
-
-
-function increase() {
-
-    let sayi = document.getElementById("sayi");
-    sayi.value = Number(sayi.value) + 1;
-}
-
-function descend() {
-
-    let sayi = document.getElementById("sayi");
-    sayi.value = Number(sayi.value) - 1;
-}
 
 
 
+// Değiştirilecek sayıyı bir değişkende tutuyoruz
+let number1 = 30;
+const sayiElementi = document.getElementById("pointOne");
+
+// Butona tıklama olayını dinleyerek sayıyı arttırıyoruz
+document.getElementById("arttirButton").addEventListener("click", function() {
+    number1++; // Sayıyı 1 arttır
+  sayiElementi.textContent =  number1; // Arttırılmış sayıyı göster
+});
 
 
 
+// Değiştirilecek sayıyı bir değişkende tutuyoruz
+let number2 = 15;
+const sayiGosterElementi = document.getElementById("pointTwo");
 
-
-
-
-
-
-
-
-
-/* 
-let text;
-let kullaniciGirisi = prompt("lütfen");
-console.log("girilen isim:" + kullaniciGirisi);
-document.getElementById(playerTwo).innerHTML = text; */
+// Butona tıklama olayını dinleyerek sayıyı arttırıyoruz
+document.getElementById("plusButton").addEventListener("click", function() {
+    number2++; // Sayıyı 1 arttır
+  sayiGosterElementi.textContent =  number2; // Arttırılmış sayıyı göster
+});
