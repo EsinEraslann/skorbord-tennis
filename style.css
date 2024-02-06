@@ -4,6 +4,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    backdrop-filter: brightness(80%);
     
 }
 
@@ -36,13 +37,14 @@ section{
     color: black;
     padding: 10px;
     text-align: center;
-}
-
-
-
-
-
-
-.test{
     font-family: 'Seven Segment', sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
 }
+
+.col :first-child{
+    font-size: 25px;
+}
+
+
+
