@@ -30,6 +30,10 @@ document.getElementById("arttirButton").addEventListener("click", function() {
 
 
 
+
+
+
+
 // Değiştirilecek sayıyı bir değişkende tutuyoruz
 let number2 = 15;
 const sayiGosterElementi = document.getElementById("pointTwo");
@@ -39,3 +43,20 @@ document.getElementById("plusButton").addEventListener("click", function() {
     number2++; // Sayıyı 1 arttır
   sayiGosterElementi.textContent =  number2; // Arttırılmış sayıyı göster
 });
+
+
+
+
+
+
+function sayiYaz() {
+    // Kullanıcıdan girilen sayıyı al
+    var sayi = document.getElementById("numberInput").value;
+    
+    // Girilen sayıyı konsola yazdır
+    console.log("Girilen sayı: " + sayi);
+    
+    // İsterseniz başka bir işlem yapabilirsiniz
+    // Örneğin, bu sayıyı bir değişkene atayabilirsiniz
+    // var sayiDegiskeni = parseInt(sayi);
+}
