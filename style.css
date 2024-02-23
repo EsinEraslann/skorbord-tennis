@@ -1,39 +1,38 @@
-
-body{
+.img-wrapper {
     background-image: url(bg-tenis-img.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    color: white;
-    backdrop-filter: brightness(80%);
-    
-}
-
-section{
-    display: flex;
-    align-items: center;
+    width: 100%;
     height: 100vh;
 }
 
-.skorbord{
-    background-color: #3e6541 ;
-    width: 45rem;
-    height: 350px;
-    margin: 0 60px;
+section {
+    display: flex;
+    align-items: center;
 }
 
-.skorbord h1{
+.skorbord {
+    background-color: #304d32;
+    width: 50rem;
+    height: 350px;
+    color: white;
+    margin: 80px 0 40px 80px;
+}
+
+.skorbord h1 {
     text-align: center;
 }
 
-.row{
+.row {
     display: flex;
     gap: 40px;
     font-weight: bolder;
     justify-content: center;
 }
 
-.col p{
-    background-color: #c2b65e ;
+.col p {
+    background-color: #c2b65e;
     color: black;
     padding: 10px;
     text-align: center;
@@ -42,21 +41,51 @@ section{
     font-size: 35px;
 }
 
-.col :first-child{
+.col :first-child {
     font-size: 25px;
 }
 
-/* 
-#numberInput{
-    background-color: #c2b65e;
-    width: 70px;
-    height: 55px;
-    border: 0;
-    margin-top: 10px;
-    font-family: 'Seven Segment', sans-serif;
-    font-weight: bolder;
-    font-size: 35px;
-    text-align: center;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
- */
+.input-container {
+    margin-top: 35px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.input-container input {
+    font-family: 'Seven Segment', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    border: none;
+    background-color: #c2b65e;
+    padding: 10px;
+}
+
+#numberInput {
+    font-size: 35px;
+}
+
+#numberInputTwo {
+    font-size: 35px;
+}
+
+.buttons{
+    margin-left: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.buttons div>button{
+    background-color: rgb(26, 25, 25);
+    color: rgb(236, 227, 227);
+    border: none;
+    padding: 10px 40px;
+    font-size: 20px;
+}

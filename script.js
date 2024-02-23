@@ -2,7 +2,7 @@ function changeName(order) {
     let text;
     let person = prompt("Please enter your name:");
     if (person == null || person == "") {
-        text = "User cancelled the prompt.";
+        text = "Unknown";
     } else {
         text = person;
     }
@@ -15,48 +15,37 @@ function changeName(order) {
 
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    const numberInput = document.getElementById("numberInput");
+    const incrementButton = document.getElementById("incrementButton");
+    const decrementButton = document.getElementById("decrementButton");
 
+    incrementButton.addEventListener("click", function() {
+        numberInput.value = parseInt(numberInput.value) + 1;
+    });
 
-
-// Değiştirilecek sayıyı bir değişkende tutuyoruz
-let number1 = 30;
-const sayiElementi = document.getElementById("pointOne");
-
-// Butona tıklama olayını dinleyerek sayıyı arttırıyoruz
-document.getElementById("arttirButton").addEventListener("click", function() {
-    number1++; // Sayıyı 1 arttır
-  sayiElementi.textContent =  number1; // Arttırılmış sayıyı göster
+    decrementButton.addEventListener("click", function() {
+        if (parseInt(numberInput.value) > 0) {
+            numberInput.value = parseInt(numberInput.value) - 1;
+        }
+    });
 });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const numberInputTwo = document.getElementById("numberInputTwo");
+    const incrementButtonTwo = document.getElementById("incrementButtonTwo");
+    const decrementButtonTwo = document.getElementById("decrementButtonTwo");
 
+    incrementButtonTwo.addEventListener("click", function() {
+        numberInputTwo.value = parseInt(numberInputTwo.value) + 1;
+    });
 
-
-
-
-// Değiştirilecek sayıyı bir değişkende tutuyoruz
-let number2 = 15;
-const sayiGosterElementi = document.getElementById("pointTwo");
-
-// Butona tıklama olayını dinleyerek sayıyı arttırıyoruz
-document.getElementById("plusButton").addEventListener("click", function() {
-    number2++; // Sayıyı 1 arttır
-  sayiGosterElementi.textContent =  number2; // Arttırılmış sayıyı göster
+    decrementButtonTwo.addEventListener("click", function() {
+        if (parseInt(numberInputTwo.value) > 0) {
+            numberInputTwo.value = parseInt(numberInputTwo.value) - 1;
+        }
+    });
 });
 
 
-
-
-
-
-function sayiYaz() {
-    // Kullanıcıdan girilen sayıyı al
-    var sayi = document.getElementById("numberInput").value;
-    
-    // Girilen sayıyı konsola yazdır
-    console.log("Girilen sayı: " + sayi);
-    
-    // İsterseniz başka bir işlem yapabilirsiniz
-    // Örneğin, bu sayıyı bir değişkene atayabilirsiniz
-    // var sayiDegiskeni = parseInt(sayi);
-}
